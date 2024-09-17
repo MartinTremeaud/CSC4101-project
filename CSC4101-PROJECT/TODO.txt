@@ -1,0 +1,12 @@
+2)
+[objet]=exoplanet
+description,string,notnull
+propriétés spécifiques
+1)
+[inventaire]=territories
+description,string,notnull
+3)
+[galérie]=knownTerritories
+4)
+member
+
