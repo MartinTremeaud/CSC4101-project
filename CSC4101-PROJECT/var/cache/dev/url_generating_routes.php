@@ -17,4 +17,10 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'app_territories' => [[], ['_controller' => 'App\\Controller\\TerritoriesController::index'], [], [['text', '/territories']], [], [], []],
+    'territories_list' => [[], ['_controller' => 'App\\Controller\\TerritoriesController::listAction'], [], [['text', '/territories/list']], [], [], []],
+    'territories_show' => [['id'], ['_controller' => 'App\\Controller\\TerritoriesController::show'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/territories']], [], [], []],
+    'App\Controller\TerritoriesController::index' => [[], ['_controller' => 'App\\Controller\\TerritoriesController::index'], [], [['text', '/territories']], [], [], []],
+    'App\Controller\TerritoriesController::listAction' => [[], ['_controller' => 'App\\Controller\\TerritoriesController::listAction'], [], [['text', '/territories/list']], [], [], []],
+    'App\Controller\TerritoriesController::show' => [['id'], ['_controller' => 'App\\Controller\\TerritoriesController::show'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/territories']], [], [], []],
 ];
