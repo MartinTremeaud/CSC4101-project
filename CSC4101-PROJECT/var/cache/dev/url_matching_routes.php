@@ -37,7 +37,8 @@ return [
                         .')'
                     .')'
                 .')'
-                .'|/territories/(\\d+)(*:220)'
+                .'|/exoplanet/(\\d+)(*:218)'
+                .'|/territories/(\\d+)(*:244)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -49,7 +50,8 @@ return [
         168 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         181 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         191 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        220 => [
+        218 => [[['_route' => 'exoplanet_show', '_controller' => 'App\\Controller\\ExoplanetController::show'], ['id'], null, null, false, true, null]],
+        244 => [
             [['_route' => 'territories_show', '_controller' => 'App\\Controller\\TerritoriesController::show'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
